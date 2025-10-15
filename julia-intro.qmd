@@ -556,7 +556,7 @@ Interoperability is excellent (especially for Python)
 - [Makie.jl](https://makie.org/) &mdash; Beautiful plotting/visualisation
 - [DataFrames.jl](https://dataframes.juliadata.org/) &mdash; Data manipulation
 - [JuMP.jl](https://jump.dev/JuMP.jl/stable/) &mdash; Optimization
-Ï
+
 <!--
 
 ₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉
