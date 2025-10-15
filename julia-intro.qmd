@@ -5,10 +5,10 @@ engine: julia
 format:
   revealjs:
     theme: [default, custom.scss]
-    output-file: slides.html
+    output-file: slides-new.html
   html:
     theme: [default, custom.scss]
-    output-file: index.html
+    output-file: index-new.html
 execute:
   echo: false
 ---
