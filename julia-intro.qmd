@@ -541,6 +541,11 @@ Interoperability is excellent (especially for Python)
 - Interoperability is excellent (especially for Python)
 - **Most packages designed to work together**
 
+## Learning Julia
+
+- Wide selection of tutorials: <https://julialang.org/learning/>
+- Great tutorial from George Datseris (U of Exeter): <https://github.com/Datseris/Zero2Hero-JuliaWorkshop>
+
 ## Notable packages
 
 - [DiffEq ecosystem](https://diffeq.sciml.ai/) &mdash; ODEs, SDEs, DDEs, DAEs, etc.
