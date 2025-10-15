@@ -25,9 +25,9 @@ Key question: **should you try it?**
 
 ## Follow along
 
-If you want to try some of the examples as we go along, this presentation is available from XXX
+If you want to try some of the examples as we go along, this presentation is available from [https://engmaths.github.io/julia-intro](https://engmaths.github.io/julia-intro)
 
-XXX QR Code here
+![QR Code for the slides](qr.svg)
 
 ## Setting up Julia
 
@@ -39,6 +39,17 @@ I work from the command line, so there might be other (easier?) ways
 3. Run Julia: `julia`
 
 VS Code has a Julia plugin --- _probably the best for most people_ --- though other editors that know about Language Server Protocol also work
+
+## Setting up Julia --- packages
+
+Julia has a built in package manager (no more Conda / Pip / Pixi / uv 😁)
+
+1. At the Julia command line press `]` to activate Pkg mode
+2. Type `add <packagename1> <packagename2> ...`
+
+Note that you have a _global_ environment and _project_ environments; avoid putting too much in global
+
+Project environments mean everything is reproducible!
 
 ## What is Julia (by Claude)
 
