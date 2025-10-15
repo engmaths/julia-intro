@@ -1,0 +1,96 @@
+// Quarto theme following the styling of the Metropolis beamer theme
+
+/*-- scss:defaults --*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:ital,wght@0,300;0,500;1,300;1,500&display=swap");
+
+$font-family-sans-serif: "Fira Sans", Helvetica, sans-serif !default;
+$font-weight-base: 300 !default;
+$font-family-monospace:
+    "Fira Code", Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$presentation-h1-font-size: 1.6em !default;
+$presentation-h2-font-size: 1.4em !default;
+$presentation-h3-font-size: 1.2em !default;
+$presentation-h4-font-size: 1em !default;
+
+$university-red: rgb(171, 31, 45) !default;
+$cool-grey: rgb(227, 230, 229) !default;
+$bright-aqua: rgb(0, 192, 181) !default;
+$bright-blue: rgb(12, 198, 222) !default;
+$bright-orange: rgb(238, 114, 25) !default;
+$bright-purple: rgb(146, 120, 209) !default;
+$bright-pink: rgb(224, 36, 154) !default;
+$bright-lime: rgb(190, 214, 0) !default;
+$dark-aqua: rgb(0, 67, 79) !default;
+$dark-blue: rgb(0, 47, 95) !default;
+$dark-orange: rgb(109, 38, 1) !default;
+$dark-purple: rgb(66, 20, 95) !default;
+$dark-pink: rgb(119, 32, 89) !default;
+$dark-lime: rgb(83, 104, 43) !default;
+
+// main colors
+/* $body-bg: #fafafa !default; */
+$body-bg: $cool-grey !default;
+$body-color: darken($cool-grey, 90%) !default;
+$text-muted: darken($body-color, 70%) !default;
+$presentation-heading-color: $university-red !default;
+
+// link colors
+$primary: $dark-blue !default;
+$link-color: $primary !default;
+$link-color-hover: lighten($link-color, 10%) !default;
+
+// selection colors
+$selection-bg: lighten($link-color, 25%) !default;
+$selection-color: $body-bg !default;
+
+// border colors
+$border-color: $presentation-heading-color !default;
+
+/*-- scss:rules --*/
+
+// Body text font weight
+.reveal {
+    font-weight: 300;
+}
+
+// Heading styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    padding-bottom: 0.25em;
+    font-weight: 500 !important;
+    color: $presentation-heading-color !important;
+}
+
+// Override all bold elements to use font-weight 500 instead of 700
+.reveal strong,
+.reveal b,
+.reveal dt,
+.reveal table th,
+.reveal [style*="font-weight: bold"],
+.reveal [style*="font-weight:bold"],
+.reveal [style*="font-weight: 700"],
+.reveal [style*="font-weight:700"] {
+    font-weight: 500 !important;
+}
+
+// Override common RevealJS bold classes and elements
+.reveal .slides section .fragment.highlight-red,
+.reveal .slides section .fragment.highlight-green,
+.reveal .slides section .fragment.highlight-blue,
+.reveal .slides section .fragment.highlight-current-red,
+.reveal .slides section .fragment.highlight-current-green,
+.reveal .slides section .fragment.highlight-current-blue {
+    font-weight: 500 !important;
+}
+
+// Additional common bold elements
+#title-block-header .abstract .abstract-title {
+    font-weight: 500;
+}
